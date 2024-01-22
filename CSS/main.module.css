@@ -1,0 +1,70 @@
+/* *****************
+Hero Code Here ->
+*******************/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content p,
+button {
+  margin-top: 20px;
+}
+.illustration {
+  text-align: right;
+}
+
+.about .illustration {
+  text-align: left;
+}
+.illustration img {
+  max-width: 300px;
+  height: auto;
+}
+.bgLabel {
+  position: absolute;
+  z-index: -1;
+  top: 121px;
+  left: 50px;
+}
+.bgLabel img {
+  width: 100px;
+  height: auto;
+}
+.h-line {
+  background: #44d1d9c7;
+  width: 70px;
+  height: 3px;
+  margin-bottom: 10px;
+}
+/* *****************
+Project Code Here ->
+*******************/
+.project {
+  background: url(/SRC/bg.png) no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+}
+/* *****************
+Footer Code Here ->
+*******************/
+footer {
+  background: #385f96;
+  padding: 20px;
+  text-align: center;
+}
+footer span {
+  font-size: 1rem;
+  color: #fff;
+}
+@media screen and (max-width: 700px) {
+  .bgLabel {
+    display: none;
+  }
+  .about .content {
+    order: 1;
+  }
+  .about .illustration {
+    order: 2;
+  }
+}
